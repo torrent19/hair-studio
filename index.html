@@ -21,6 +21,40 @@
                 </div>
 
         </div>
-    </section>
+     </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="./Barber_Shop_img/menu.png" alt=" " id="menu">
+    </div>
+
+    <script>
+        let menuBtn = document.getElementById("menuBtn")
+        let sideNav = document.getElementById("sideNav")
+        let menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+        menuBtn.onclick = function (){
+            if (sideNav.style.right == "-250px")
+                {
+                sideNav.style.right = "0";
+                menu.src = "Barber_Shop_img/close.png"
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "Barber_Shop_img/menu.png"
+                }
+            
+        }
+    </script>
 </body>
 </html>
